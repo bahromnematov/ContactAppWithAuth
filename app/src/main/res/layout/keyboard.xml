@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/btOne"
+        style="@style/PinItem"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/btTwo"
+        style="@style/PinItem"
+        android:text="2" />
+
+    <TextView
+        android:id="@+id/btThree"
+        style="@style/PinItem"
+        android:text="3" />
+
+    <TextView
+        android:id="@+id/btFour"
+        style="@style/PinItem"
+        android:text="4" />
+
+    <TextView
+        android:id="@+id/btFive"
+        style="@style/PinItem"
+        android:text="5" />
+
+    <TextView
+        android:id="@+id/btSix"
+        style="@style/PinItem"
+        android:text="6" />
+
+    <TextView
+        android:id="@+id/btSeven"
+        style="@style/PinItem"
+        android:text="7" />
+
+    <TextView
+        android:id="@+id/btEight"
+        style="@style/PinItem"
+        android:text="8" />
+
+    <TextView
+        android:id="@+id/btNine"
+        style="@style/PinItem"
+        android:text="9" />
+
+    <ImageView
+        android:id="@+id/btClear"
+        style="@style/PinItem"
+        android:padding="20dp"
+        android:src="@drawable/ic_backspace" />
+
+    <TextView
+        android:id="@+id/btZero"
+        style="@style/PinItem"
+        android:text="0" />
+
+    <ImageView
+        android:id="@+id/btConfirm"
+        style="@style/PinItem"
+        android:padding="16dp"
+        android:src="@drawable/ic_check" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:constraint_referenced_ids="btOne,btTwo,btThree,
+        btFour,btFive,btSix,btSeven,btEight, btNine, btClear,btZero,btConfirm"
+        app:flow_maxElementsWrap="3"
+        app:flow_wrapMode="chain"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
